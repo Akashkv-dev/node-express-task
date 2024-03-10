@@ -1,0 +1,64 @@
+<section class="vh-100 bg-color" style="background-color:rgb(143, 118, 118) ;">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Update account</h2>
+
+
+              <form action="/update/{{foredit._id}}" method="post">
+
+                <section>
+
+
+                  <div class="form-group">
+                    <label class="form-label" for="form3Example1cg">Your Name</label>
+                    <input type="text" id="form3Example1cg" value="{{foredit.name}}"
+                      class="form-control form-control-lg" name="name" />
+
+                  </div>
+
+
+                  <div class="form-group">
+                    <label class="form-label" for="form3Example3cg">Your Email</label>
+                    <input type="email" id="form3Example3cg" value="{{foredit.email}}"
+                      class="form-control form-control-lg" readonly name="email" />
+
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="form3Example4cg">Password</label>
+                    <input type="password" id="form3Example4cg" readonly value="{{foredit.password}}"
+                      class="form-control form-control-lg" name="password" />
+
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="form3Example4cdg">Age</label>
+                    <input type="number" id="form3Example4cdg" value="{{foredit.age}}"
+                      class="form-control form-control-lg" name="age" />
+
+                  </div>
+
+
+                  <div class="d-flex justify-content-center">
+
+                    <button type="submit"
+                      class="btn btn-success btn-block btn-lg gradient-custom-4 text-body mt-2">Update</button>
+
+                  </div>
+
+
+
+
+
+               </section>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
