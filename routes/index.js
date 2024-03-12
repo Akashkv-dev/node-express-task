@@ -11,7 +11,7 @@ const isAuth = function (req, res, next) {
     next();
   }
   else {
-    res.redirect('/')
+    // res.redirect('/')
   }
 }
 // *************************************************login get*******************************************
