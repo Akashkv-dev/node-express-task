@@ -35,7 +35,7 @@ router.post('/register', async (req, res) => {
   await user.insertMany(req.body)
 
   res.redirect('/')
-
+/////
 })
 
 
